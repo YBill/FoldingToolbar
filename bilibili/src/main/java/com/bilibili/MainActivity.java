@@ -1,5 +1,6 @@
 package com.bilibili;
 
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton floatingActionButton;
     private ImageView imageView;
     private View videoLayout;
-    private VideoView videoView;
+    private MyVideoView videoView; // VideoView不好用,建议使用第三方的播放控件
     private NestedScrollView nestedScrollView;
 
     private CollapsingToolbarLayoutState state;
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
         imageView = (ImageView) findViewById(R.id.imageview);
         videoLayout = findViewById(R.id.video_layout);
-        videoView = (VideoView) findViewById(R.id.videoview);
+        videoView = (MyVideoView) findViewById(R.id.videoview);
         titleText = (TextView) findViewById(R.id.toolbar_title);
         titleText.setText("Bill");
         buttonBarLayout = (ButtonBarLayout) findViewById(R.id.playButton);
@@ -117,15 +118,25 @@ public class MainActivity extends AppCompatActivity {
     private void palyVideo() {
         imageView.setVisibility(View.GONE);
         videoLayout.setVisibility(View.VISIBLE);
+        floatingActionButton.setVisibility(View.GONE);
         nestedScrollView.setNestedScrollingEnabled(false);
+        appBarLayout.setExpanded(true);
 
-        File videoFile = new File("/sdcard/test.mp4");
+        // 现在这个链接是可以用的，播放比较慢，耐心等一会
+        Uri uri = Uri.parse("rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov");
+        videoView.setVideoURI(uri);
+        videoView.setMediaController(mController);
+        videoView.start();
+        videoView.requestFocus();
+
+
+        /*File videoFile = new File("/sdcard/test.mp4");
         if (videoFile.exists()) {
             videoView.setVideoPath(videoFile.getAbsolutePath());
             videoView.setMediaController(mController);
             videoView.start();
             videoView.requestFocus();
-        }
+        }*/
     }
 
     @Override
