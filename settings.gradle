@@ -1,1 +1,1 @@
-include ':app', ':bilibili'
+include ':app', ':bilibili', ':rmrbhead'

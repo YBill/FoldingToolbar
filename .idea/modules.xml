@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/FoldingToolbar.iml" filepath="$PROJECT_DIR$/FoldingToolbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bilibili/bilibili.iml" filepath="$PROJECT_DIR$/bilibili/bilibili.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmrbhead/rmrbhead.iml" filepath="$PROJECT_DIR$/rmrbhead/rmrbhead.iml" />
     </modules>
   </component>
 </project>
