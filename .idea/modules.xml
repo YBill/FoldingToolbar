@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FoldingToolbar.iml" filepath="$PROJECT_DIR$/FoldingToolbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/FoldingToolbar-app.iml" filepath="$PROJECT_DIR$/app/FoldingToolbar-app.iml" group="FoldingToolbar/app" />
+      <module fileurl="file://$PROJECT_DIR$/bilibili/FoldingToolbar-bilibili.iml" filepath="$PROJECT_DIR$/bilibili/FoldingToolbar-bilibili.iml" group="FoldingToolbar/bilibili" />
+      <module fileurl="file://$PROJECT_DIR$/rmrbhead/FoldingToolbar-rmrbhead.iml" filepath="$PROJECT_DIR$/rmrbhead/FoldingToolbar-rmrbhead.iml" group="FoldingToolbar/rmrbhead" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/bilibili/bilibili.iml" filepath="$PROJECT_DIR$/bilibili/bilibili.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmrbhead/rmrbhead.iml" filepath="$PROJECT_DIR$/rmrbhead/rmrbhead.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspace-FoldingToolbar.iml" filepath="$PROJECT_DIR$/workspace-FoldingToolbar.iml" group="FoldingToolbar" />
     </modules>
   </component>
 </project>

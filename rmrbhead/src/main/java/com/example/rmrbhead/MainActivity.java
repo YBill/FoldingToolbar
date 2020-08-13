@@ -1,11 +1,11 @@
 package com.example.rmrbhead;
 
 import android.graphics.Color;
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
+import androidx.appcompat.widget.Toolbar;
+
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
